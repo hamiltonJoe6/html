@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        background-color: #c5c3c3;
+        margin-left: 10px;
+      }
+      .header {
+        font-family: fantasy;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+        background-color: darkkhaki;
+        margin-bottom: 10px;
+      }
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin: 10px 2px;
+        float: left;
+        width: 24%;
+      }
+      .card .description {
+        border:1px solid #ccc;
+      }
+      .card .description:hover {
+        border: 1px solid #777;
+        background-color: yellow;
+        transition: 1.5s;
+        border-radius: 4px;
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+      .card p {
+        font-family: monospace;
+        padding: 10px;
+        text-align: center;
+      }
+      .clearfix{
+          content: "";
+          display: table;
+          clear: both;
+      }
+      @media only screen and (max-width: 700px) {
+          .card {
+              width: 47%
+          }
+      }
+      @media only screen and (max-width: 500px) {
+          .card {
+              width: 100%;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 style="margin-bottom: 20px">Responsive Image Gallery</h1>
+      <p>Resize the browser window to see the effect.</p>
+    </div>
+    <div class="card">
+      <div class="description">
+        <a target="_blank" href="img_5terre.jpg">
+            <img
+            src="./img_5terre.jpg"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+            />
+        </a>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
+          deleniti reiciendis nisi recusandae, ipsam delectus voluptates quos,
+          ab laborum velit illum reprehenderit incidunt voluptatibus molestias
+          assumenda modi vel mollitia sed.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="description">
+        <img src="./img_forest.jpg" alt="Forest" width="600" height="400" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
+          deleniti reiciendis nisi recusandae, ipsam delectus voluptates quos,
+          ab laborum velit illum reprehenderit incidunt voluptatibus molestias
+          assumenda modi vel mollitia sed.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="description">
+        <img
+          src="./img_lights.jpg"
+          alt="Northern Lights"
+          width="600"
+          height="400"
+        />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
+          deleniti reiciendis nisi recusandae, ipsam delectus voluptates quos,
+          ab laborum velit illum reprehenderit incidunt voluptatibus molestias
+          assumenda modi vel mollitia sed.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+        <div class="description">
+            <img src="./img_mountains.jpg" alt="Mountains" width="600" height="400" />
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
+                deleniti reiciendis nisi recusandae, ipsam delectus voluptates quos, ab
+                laborum velit illum reprehenderit incidunt voluptatibus molestias
+                assumenda modi vel mollitia sed.
+            </p>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div style="padding: 20px; font-family: monospace; border: 1px solid #333; margin: 10px;">
+      <p>
+        This example use media queries to re-arrange the images on different
+        screen sizes: for screens larger than 700px wide, it will show four
+        images side by side, for screens smaller than 700px, it will show two
+        images side by side. For screens smaller than 500px, the images will
+        stack vertically (100%).
+      </p>
+      <p>
+        You will learn more about media queries and responsive web design later
+        in our CSS Tutorial.
+      </p>
+    </div>
+  </body>
+</html>
